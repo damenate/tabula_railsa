@@ -11,15 +11,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151005145700) do
+ActiveRecord::Schema.define(version: 20151005150926) do
 
   create_table "me_likies", force: :cascade do |t|
     t.string   "name"
-    t.string   "chocolate"
-    t.string   "rainbows"
-    t.string   "puppies"
-    t.string   "cold_hard_cash"
-    t.integer  "yes_no_id"
+    t.boolean  "chocolate"
+    t.boolean  "rainbows"
+    t.boolean  "puppies"
+    t.boolean  "cold_hard_cash"
     t.datetime "created_at",     null: false
     t.datetime "updated_at",     null: false
   end

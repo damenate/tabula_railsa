@@ -2,16 +2,14 @@
 
 one:
   name: MyString
-  chocolate: MyString
-  rainbows: MyString
-  puppies: MyString
-  cold_hard_cash: MyString
-  yes_no_id: 1
+  chocolate: false
+  rainbows: false
+  puppies: false
+  cold_hard_cash: false
 
 two:
   name: MyString
-  chocolate: MyString
-  rainbows: MyString
-  puppies: MyString
-  cold_hard_cash: MyString
-  yes_no_id: 1
+  chocolate: false
+  rainbows: false
+  puppies: false
+  cold_hard_cash: false
