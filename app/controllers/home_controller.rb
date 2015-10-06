@@ -1,8 +1,9 @@
 class HomeController < ApplicationController
 
   def form
+    @me_liky = MeLiky.new
     if request.post?
-      MeLiky.create!(name: params[:name], chocolate: params[:chocolate],
+    @me_liky = MeLiky.create!(name: params[:name], chocolate: params[:chocolate],
       rainbows: params[:rainbows], puppies: [:puppies],
       cold_hard_cash: params[:cold_hard_cash])
     end
@@ -12,11 +13,11 @@ class HomeController < ApplicationController
     @me_likies = MeLiky.new.all
   end
 
-  def private
+  private def me_liky_params
 
     def me_liky_params
-      params.require(:me_likies).permit(:name, :chocolate, :rainbows,
+      params.require(:me_liky).permit(:name, :chocolate, :rainbows,
        :puppies, :cold_hard_cash)
     end
-
+  end
 end
