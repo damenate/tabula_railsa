@@ -1,4 +1,5 @@
 <% if request.post? %>
+<%= form_for(@me_liky, url: home_create_path) do |f| %>
   Thanks for submitting the form!  Here are your answers:<br>
   Name: <%= @me_liky %><br>
   Do you like Chocolate? <%= @me_liky ? "Yes!" : "No" %><br>
